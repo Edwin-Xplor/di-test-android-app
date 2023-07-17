@@ -1,6 +1,5 @@
-package com.example.koinandroidapp;
+package com.example.koinandroidapp
 
-import android.app.Application;
+import android.app.Application
 
-public class MainApplication extends Application {
-}
+class MainApplication : Application()
