@@ -1,4 +1,4 @@
-package com.example.koinandroidapp
+package com.example.koinandroidapp.application
 
 import android.app.Application
 

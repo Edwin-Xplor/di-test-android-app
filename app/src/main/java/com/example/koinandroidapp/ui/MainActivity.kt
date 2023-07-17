@@ -1,4 +1,4 @@
-package com.example.koinandroidapp
+package com.example.koinandroidapp.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
