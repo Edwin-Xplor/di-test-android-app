@@ -1,10 +1,8 @@
 package com.example.koinandroidapp.data.network.client
 
 import com.example.koinandroidapp.data.network.model.ApiResponse
-import org.koin.android.BuildConfig
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Headers
 import retrofit2.http.Query
 
 interface ApiClient {

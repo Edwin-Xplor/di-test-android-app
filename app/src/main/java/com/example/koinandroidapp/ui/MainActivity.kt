@@ -3,6 +3,7 @@ package com.example.koinandroidapp.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -37,11 +38,12 @@ import com.example.koinandroidapp.data.network.model.MovieResponse
 import com.example.koinandroidapp.ui.theme.KoinAndroidAppTheme
 import com.example.koinandroidapp.viewmodel.MainViewModel
 import com.example.koinandroidapp.viewmodel.MoviesUiState
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-    private val viewModel by viewModel<MainViewModel>()
+    private val viewModel by viewModels<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

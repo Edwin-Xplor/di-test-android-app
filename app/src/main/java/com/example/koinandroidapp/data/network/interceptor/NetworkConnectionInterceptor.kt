@@ -7,10 +7,13 @@ import android.net.NetworkCapabilities.TRANSPORT_ETHERNET
 import android.net.NetworkCapabilities.TRANSPORT_WIFI
 import com.example.koinandroidapp.BuildConfig
 import com.example.koinandroidapp.util.NoInternetException
+import dagger.hilt.android.qualifiers.ApplicationContext
 import okhttp3.Interceptor
 import okhttp3.Response
+import javax.inject.Inject
 
-class NetworkConnectionInterceptor(context: Context) : Interceptor {
+class NetworkConnectionInterceptor @Inject constructor(@ApplicationContext context: Context) :
+    Interceptor {
     private val applicationContext = context.applicationContext
 
     override fun intercept(chain: Interceptor.Chain): Response {
