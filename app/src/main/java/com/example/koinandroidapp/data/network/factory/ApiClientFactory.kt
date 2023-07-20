@@ -2,8 +2,9 @@ package com.example.koinandroidapp.data.network.factory
 
 import com.example.koinandroidapp.data.network.client.ApiClient
 import retrofit2.Retrofit
+import javax.inject.Inject
 
-class ApiClientFactory(
+class ApiClientFactory @Inject constructor(
     private val retrofit: Retrofit
 ) : IApiFactory {
     override val client: ApiClient
